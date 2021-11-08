@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211102 06:32:29.882" rpa="false" schemaversion="2">
+<suite id="s1" name="Sample test" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_cases\Login_Test\Sample_test.robot">
+<test id="s1-t1" name="Facebook – log in or sign up test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.facebook.com/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211102 06:32:33.257" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20211102 06:32:33.256" endtime="20211102 06:32:47.154"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="email"]</arg>
+<arg>ravi.nirale</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211102 06:32:47.155" level="INFO">Typing text 'ravi.nirale' into text field '//input[@name="email"]'.</msg>
+<status status="PASS" starttime="20211102 06:32:47.155" endtime="20211102 06:32:47.265"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="pass"]</arg>
+<arg>***</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211102 06:32:47.266" level="INFO">Typing text '***' into text field '//input[@name="pass"]'.</msg>
+<status status="PASS" starttime="20211102 06:32:47.265" endtime="20211102 06:32:47.372"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211102 06:32:47.373" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<status status="PASS" starttime="20211102 06:32:47.372" endtime="20211102 06:32:47.439"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211102 06:32:47.439" endtime="20211102 06:32:49.877"/>
+</kw>
+<status status="PASS" starttime="20211102 06:32:33.253" endtime="20211102 06:32:49.878"/>
+</test>
+<doc>A test suite with a single test for Facebook – log in or sign up
+Created by hats' Robotcorder</doc>
+<status status="PASS" starttime="20211102 06:32:29.885" endtime="20211102 06:32:49.879"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sample test">Sample test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
