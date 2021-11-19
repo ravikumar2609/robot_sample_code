@@ -1,203 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211119 12:30:40.646" rpa="false" schemaversion="2">
-<suite id="s1" name="Test cases" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_cases">
-<suite id="s1-s1" name="Fetch data" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_cases\Fetch_data">
-<suite id="s1-s1-s1" name="Fetch data" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_cases\Fetch_data\Fetch_data.robot">
-<test id="s1-s1-s1-t1" name="TC009_Test case">
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>xpath://a[@class='_8esh']</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211119 12:30:42.647" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20211119 12:30:42.646" endtime="20211119 12:30:42.647"/>
-</kw>
-<msg timestamp="20211119 12:30:42.810" level="FAIL">No browser is open.</msg>
-<status status="FAIL" starttime="20211119 12:30:42.645" endtime="20211119 12:30:42.810"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${value}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211119 12:30:42.811" endtime="20211119 12:30:42.811"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${value}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20211119 12:30:42.811" endtime="20211119 12:30:42.811"/>
-</kw>
-<status status="FAIL" starttime="20211119 12:30:42.644" endtime="20211119 12:30:42.812">No browser is open.</status>
-</test>
-<doc>1st test case in robot framework here we can try this</doc>
-<status status="FAIL" starttime="20211119 12:30:40.832" endtime="20211119 12:30:42.814"/>
-</suite>
-<status status="FAIL" starttime="20211119 12:30:40.827" endtime="20211119 12:30:42.834"/>
-</suite>
-<suite id="s1-s2" name="Login Test" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_cases\Login_Test">
-<suite id="s1-s2-s1" name="Sample test" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_cases\Login_Test\Sample_test.robot">
-<test id="s1-s2-s1-t1" name="Facebook – log in or sign up test">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211119 12:44:17.300" rpa="false" schemaversion="2">
+<suite id="s1" name="New Test Case" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_case_new\new_test_case.robot">
+<test id="s1-t1" name="Facebook – log in or sign up test">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://www.facebook.com/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211119 12:30:43.149" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211119 12:30:50.015" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20211119 12:30:50.014" endtime="20211119 12:30:50.015"/>
-</kw>
-<msg timestamp="20211119 12:30:50.261" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 94
-Current browser version is 96.0.4664.45 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00EBBDE3+2473443]
-	Ordinal0 [0x00E56661+2057825]
-	Ordinal0 [0x00D62438+1057848]
-	Ordinal0 [0x00D8054A+1181002]
-	Ordinal0 [0x00D7C435+1164341]
-	Ordinal0 [0x00D79CAF+1154223]
-	Ordinal0 [0x00DA9ADF+1350367]
-	Ordinal0 [0x00DA974A+1349450]
-	Ordinal0 [0x00DA55AB+1332651]
-	Ordinal0 [0x00D82104+1188100]
-	Ordinal0 [0x00D82F59+1191769]
-	GetHandleVerifier [0x01042266+1549718]
-	GetHandleVerifier [0x010ED4A7+2250711]
-	GetHandleVerifier [0x00F4718B+521403]
-	GetHandleVerifier [0x00F46229+517465]
-	Ordinal0 [0x00E5B79D+2078621]
-	Ordinal0 [0x00E5FB58+2095960]
-	Ordinal0 [0x00E5FC92+2096274]
-	Ordinal0 [0x00E69541+2135361]
-	BaseThreadInitThunk [0x75486359+25]
-	RtlGetAppContainerNamedObjectPath [0x77258944+228]
-	RtlGetAppContainerNamedObjectPath [0x77258914+180]
-</msg>
-<status status="FAIL" starttime="20211119 12:30:43.147" endtime="20211119 12:30:50.261"/>
+<msg timestamp="20211119 12:44:18.017" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20211119 12:44:18.016" endtime="20211119 12:44:26.776"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@name="email"]</arg>
 <arg>ravi.nirale</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211119 12:30:50.263" endtime="20211119 12:30:50.263"/>
+<msg timestamp="20211119 12:44:26.779" level="INFO">Typing text 'ravi.nirale' into text field '//input[@name="email"]'.</msg>
+<status status="PASS" starttime="20211119 12:44:26.778" endtime="20211119 12:44:27.036"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@name="pass"]</arg>
-<arg>***</arg>
+<arg>26091986</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211119 12:30:50.265" endtime="20211119 12:30:50.265"/>
+<msg timestamp="20211119 12:44:27.039" level="INFO">Typing text '26091986' into text field '//input[@name="pass"]'.</msg>
+<status status="PASS" starttime="20211119 12:44:27.038" endtime="20211119 12:44:27.334"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2 seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20211119 12:30:50.266" endtime="20211119 12:30:50.266"/>
+<msg timestamp="20211119 12:44:29.337" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211119 12:44:27.335" endtime="20211119 12:44:29.337"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@name="login"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211119 12:30:50.267" endtime="20211119 12:30:50.267"/>
+<msg timestamp="20211119 12:44:29.339" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<status status="PASS" starttime="20211119 12:44:29.339" endtime="20211119 12:44:29.485"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20211119 12:30:50.268" endtime="20211119 12:30:50.268"/>
+<status status="PASS" starttime="20211119 12:44:29.485" endtime="20211119 12:44:31.676"/>
 </kw>
-<status status="FAIL" starttime="20211119 12:30:43.102" endtime="20211119 12:30:50.270">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 94
-Current browser version is 96.0.4664.45 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00EBBDE3+2473443]
-	Ordinal0 [0x00E56661+2057825]
-	Ordinal0 [0x00D62438+1057848]
-	Ordinal0 [0x00D8054A+1181002]
-	Ordinal0 [0x00D7C435+1164341]
-	Ordinal0 [0x00D79CAF+1154223]
-	Ordinal0 [0x00DA9ADF+1350367]
-	Ordinal0 [0x00DA974A+1349450]
-	Ordinal0 [0x00DA55AB+1332651]
-	Ordinal0 [0x00D82104+1188100]
-	Ordinal0 [0x00D82F59+1191769]
-	GetHandleVerifier [0x01042266+1549718]
-	GetHandleVerifier [0x010ED4A7+2250711]
-	GetHandleVerifier [0x00F4718B+521403]
-	GetHandleVerifier [0x00F46229+517465]
-	Ordinal0 [0x00E5B79D+2078621]
-	Ordinal0 [0x00E5FB58+2095960]
-	Ordinal0 [0x00E5FC92+2096274]
-	Ordinal0 [0x00E69541+2135361]
-	BaseThreadInitThunk [0x75486359+25]
-	RtlGetAppContainerNamedObjectPath [0x77258944+228]
-	RtlGetAppContainerNamedObjectPath [0x77258914+180]
-</status>
+<status status="PASS" starttime="20211119 12:44:18.013" endtime="20211119 12:44:31.678"/>
 </test>
 <doc>A test suite with a single test for Facebook – log in or sign up
 Created by hats' Robotcorder</doc>
-<status status="FAIL" starttime="20211119 12:30:42.841" endtime="20211119 12:30:50.275"/>
-</suite>
-<suite id="s1-s2-s2" name="Sample test1" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_cases\Login_Test\Sample_test1.robot">
-<kw name="Before execution of test cases" type="SETUP">
-<msg timestamp="20211119 12:30:50.322" level="FAIL">No keyword with name 'Before execution of test cases' found.</msg>
-<status status="FAIL" starttime="20211119 12:30:50.322" endtime="20211119 12:30:50.322"/>
-</kw>
-<test id="s1-s2-s2-t1" name="TC005_Test case">
-<tag>All_TC</tag>
-<tag>sanity</tag>
-<tag>smoke</tag>
-<status status="FAIL" starttime="20211119 12:30:50.322" endtime="20211119 12:30:50.323">Parent suite setup failed:
-No keyword with name 'Before execution of test cases' found.</status>
-</test>
-<test id="s1-s2-s2-t2" name="TC006_Test case">
-<tag>All_TC</tag>
-<tag>regression</tag>
-<status status="FAIL" starttime="20211119 12:30:50.326" endtime="20211119 12:30:50.327">Parent suite setup failed:
-No keyword with name 'Before execution of test cases' found.</status>
-</test>
-<test id="s1-s2-s2-t3" name="TC007_Test case">
-<tag>All_TC</tag>
-<tag>smoke</tag>
-<status status="FAIL" starttime="20211119 12:30:50.330" endtime="20211119 12:30:50.331">Parent suite setup failed:
-No keyword with name 'Before execution of test cases' found.</status>
-</test>
-<test id="s1-s2-s2-t4" name="TC008_Test case">
-<tag>All_TC</tag>
-<tag>sanity</tag>
-<status status="FAIL" starttime="20211119 12:30:50.335" endtime="20211119 12:30:50.337">Parent suite setup failed:
-No keyword with name 'Before execution of test cases' found.</status>
-</test>
-<kw name="After execution of test cases" type="TEARDOWN">
-<msg timestamp="20211119 12:30:50.348" level="FAIL">No keyword with name 'After execution of test cases' found.</msg>
-<status status="FAIL" starttime="20211119 12:30:50.348" endtime="20211119 12:30:50.348">No keyword with name 'After execution of test cases' found.</status>
-</kw>
-<doc>2nd test case in robot framework here we can try this</doc>
-<status status="FAIL" starttime="20211119 12:30:50.282" endtime="20211119 12:30:50.348">Suite setup failed:
-No keyword with name 'Before execution of test cases' found.
-
-Also suite teardown failed:
-No keyword with name 'After execution of test cases' found.</status>
-</suite>
-<status status="FAIL" starttime="20211119 12:30:42.836" endtime="20211119 12:30:50.353"/>
-</suite>
-<status status="FAIL" starttime="20211119 12:30:40.677" endtime="20211119 12:30:50.358"/>
+<status status="PASS" starttime="20211119 12:44:17.308" endtime="20211119 12:44:31.683"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="6" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="4" skip="0">All_TC</stat>
-<stat pass="0" fail="1" skip="0">regression</stat>
-<stat pass="0" fail="2" skip="0">sanity</stat>
-<stat pass="0" fail="2" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="0" fail="6" skip="0" id="s1" name="Test cases">Test cases</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Fetch data">Test cases.Fetch data</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Fetch data">Test cases.Fetch data.Fetch data</stat>
-<stat pass="0" fail="5" skip="0" id="s1-s2" name="Login Test">Test cases.Login Test</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s2-s1" name="Sample test">Test cases.Login Test.Sample test</stat>
-<stat pass="0" fail="4" skip="0" id="s1-s2-s2" name="Sample test1">Test cases.Login Test.Sample test1</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="New Test Case">New Test Case</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211119 12:30:50.309" level="ERROR">Error in file 'C:\Users\admin\Desktop\Robot_dummy_project\Test_cases\Login_Test\Sample_test1.robot' on line 3: Resource file 'Resource\resource1.robot' does not exist.</msg>
 </errors>
 </robot>
