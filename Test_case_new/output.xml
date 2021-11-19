@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211119 12:40:13.409" rpa="false" schemaversion="2">
+<suite id="s1" name="New Test Case" source="C:\Users\admin\Desktop\Robot_dummy_project\Test_case_new\new_test_case.robot">
+<test id="s1-t1" name="Facebook – log in or sign up test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.facebook.com/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211119 12:40:13.981" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20211119 12:40:13.981" endtime="20211119 12:40:23.274"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="email"]</arg>
+<arg>ravi.nirale</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211119 12:40:23.278" level="INFO">Typing text 'ravi.nirale' into text field '//input[@name="email"]'.</msg>
+<status status="PASS" starttime="20211119 12:40:23.276" endtime="20211119 12:40:23.550"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="pass"]</arg>
+<arg>26091986</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211119 12:40:23.553" level="INFO">Typing text '26091986' into text field '//input[@name="pass"]'.</msg>
+<status status="PASS" starttime="20211119 12:40:23.552" endtime="20211119 12:40:23.844"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211119 12:40:25.846" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211119 12:40:23.844" endtime="20211119 12:40:25.846"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211119 12:40:25.849" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<status status="PASS" starttime="20211119 12:40:25.847" endtime="20211119 12:40:26.011"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211119 12:40:26.012" endtime="20211119 12:40:28.223"/>
+</kw>
+<status status="PASS" starttime="20211119 12:40:13.980" endtime="20211119 12:40:28.224"/>
+</test>
+<doc>A test suite with a single test for Facebook – log in or sign up
+Created by hats' Robotcorder</doc>
+<status status="PASS" starttime="20211119 12:40:13.412" endtime="20211119 12:40:28.229"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="New Test Case">New Test Case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
