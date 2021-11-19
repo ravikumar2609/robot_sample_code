@@ -1,9 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../Resource/resource1.robot
+Resource    ./Resource/resource1.robot
 
 Documentation    2nd test case in robot framework here we can try this
-Suite Setup    Before execution of test cases
+Suite Setup     Before execution of test cases
 Suite Teardown    After execution of test cases
 Test Setup    Open website
 Test Teardown    Close website
